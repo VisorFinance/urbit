@@ -3924,6 +3924,7 @@
         ruf=raft                                      ::  revision tree
     ==                                                ::
 |=  [now=@da eny=@uvJ rof=roof]                       ::  current invocation
+~&  clay-all++<
 |%                                                    ::
 ++  call                                              ::  handle request
   |=  $:  hen=duct
@@ -4161,6 +4162,12 @@
     ==
   ==
 ::
+::  ++  load
+::    |=  old=*
+::    ~&  old=-.old
+::    ~|  oldbar=-.old
+::    !!
+::
 ++  load
   =>  |%
       +$  raft-any
@@ -4209,9 +4216,13 @@
       +$  ford-cache-6  *                               ::  discard old cache
       --
   |=  old=raft-any
+  ~|  six=[`*`-.old]
+  ~&  sixties=[`*`-.old]
+  ~&  seventies=[`*`-.old]
+  ~|  sixes=[`*`-.old]
   |^
   =?  old  ?=(%6 -.old)  7+(raft-6-to-7 +.old)
-  ~|  seven=`*`-.old
+  ~|  seven=[`*`- `*`+< ?=(^ `*`+>)]:old
   ?>  ?=(%7 -.old)
   ..^$(ruf +.old)
   ::  +raft-6-to-7: delete stale ford caches (they could all be invalid)

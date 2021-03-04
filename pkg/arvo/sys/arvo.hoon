@@ -1008,8 +1008,10 @@
         ++  update
           |=  [las=vase nex=vase]
           ^-  vase
-          =/  sam=vase  (slap (slym las *vane-sample) [%limb %stay])
-          =/  gat=vase  (slap (slym nex *vane-sample) [%limb %load])
+          =/  sam=vase  (slap (slym las [~2002.3.4 0v235 *rook]) [%limb %stay])
+          ~&  four=[`*`-.q.sam]
+          =/  gat=vase  (slap (slym nex [~2001.2.3 0v234 *rook]) [%limb %load])
+          ~&  five=[`*`-.q.sam]
           (slam gat sam)
         --
     ::
